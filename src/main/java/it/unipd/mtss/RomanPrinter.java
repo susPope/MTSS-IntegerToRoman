@@ -18,6 +18,7 @@ public class RomanPrinter {
     // orizzontale per ogni lettera romana
     String[][] asciiLetters = {
       {// Riga1
+        "  _____  ",  // D
         "   _____ ",  // C
         "  _      ",  // L
         " __   __",  // X
@@ -26,6 +27,7 @@ public class RomanPrinter {
       },
 
       {// Riga2
+        " |  __ \\ ",  // D
         "  / ____|", // C
         " | |     ",  // L
         " \\ \\ / /",  // X
@@ -34,6 +36,7 @@ public class RomanPrinter {
       },
 
       {// Riga3
+        " | |  | |",  // D
         " | |     ",  // C
         " | |     ",  // L
         "  \\ V / ",  // X
@@ -42,6 +45,7 @@ public class RomanPrinter {
       },
 
       {// Riga4
+        " | |  | |", // D
         " | |     ", // C
         " | |     ", // L
         "   > <  ", // X
@@ -50,6 +54,7 @@ public class RomanPrinter {
       },
       
       {// Riga5
+        " | |__| |", // D
         " | |____ ", // C
         " | |____ ", // L
         "  / . \\ ", // X
@@ -58,6 +63,7 @@ public class RomanPrinter {
       },
       
       {// Riga6
+        " |_____/ ", // D
         "  \\_____|", // C
         " |______|", // L
         " /_/ \\_\\", // X
@@ -66,7 +72,7 @@ public class RomanPrinter {
       },
     };
     
-    String supportedLetters = "CLXVI";
+    String supportedLetters = "DCLXVI";
     
     for (int z = 0; z < asciiLetters.length; z++) {
       for (char c : romanNumber.toCharArray()) {
