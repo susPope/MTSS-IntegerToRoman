@@ -9,8 +9,8 @@ public class IntegerToRoman {
   public static String convert(int number) {
     // Definizione delle lettere romane e 
     // dei loro valori corrispondenti
-    String[] romanLetters = {"I"};
-    int[] values = {1};
+    String[] romanLetters = {"V", "IV", "I"};
+    int[] values = {5, 4, 1};
 
     StringBuilder romanNumber = new StringBuilder();
 
